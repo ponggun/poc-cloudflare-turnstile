@@ -41,8 +41,14 @@ This project demonstrates how to integrate Cloudflare Turnstile (Invisible CAPTC
 
 3. Run the application:
    ```bash
+   # Using VS Code task (recommended)
+   # Press Cmd+Shift+B (macOS) or Ctrl+Shift+B (Windows/Linux) and select "Run ASP.NET 8 MVC App"
+   # Or run manually:
    cd src/TurnstilePoC
    dotnet run
+
+   # Then Ngrok
+   ngrok http https://localhost:5001 --host-header=rewrite
    ```
 
 4. Open https://localhost:5001/Account/Login in your browser
