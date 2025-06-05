@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "PDPA Consent";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Personal Data Protection Act (PDPA) Consent</h5>
+        
+        <p class="card-text">
+            This application may collect and process personal data in accordance with the Personal Data Protection Act (PDPA).
+            By using this service, you acknowledge and consent to the following:
+        </p>
+
+        <h6>Data Collection:</h6>
+        <ul>
+            <li>Email addresses for authentication purposes</li>
+            <li>IP addresses for security verification via Cloudflare Turnstile</li>
+            <li>System logs for application monitoring and troubleshooting</li>
+        </ul>
+
+        <h6>Purpose of Data Processing:</h6>
+        <ul>
+            <li>User authentication and access control</li>
+            <li>Security protection against automated attacks</li>
+            <li>System performance monitoring and improvement</li>
+        </ul>
+
+        <h6>Data Sharing:</h6>
+        <p>
+            Your data may be shared with trusted third parties including:
+        </p>
+        <ul>
+            <li>Cloudflare for security verification services</li>
+            <li>Cloud hosting providers for application infrastructure</li>
+        </ul>
+
+        <h6>Your Rights:</h6>
+        <p>Under the PDPA, you have the right to:</p>
+        <ul>
+            <li>Access your personal data</li>
+            <li>Request correction of inaccurate data</li>
+            <li>Request deletion of your data</li>
+            <li>Withdraw consent (where applicable)</li>
+            <li>Data portability</li>
+        </ul>
+
+        <div class="alert alert-info mt-3">
+            <strong>Contact Information:</strong><br>
+            For any data protection inquiries or to exercise your rights, please contact the data controller 
+            through the appropriate channels provided by this application.
+        </div>
+
+        <div class="mt-3">
+            <a href="@Url.Action("Privacy", "Home")" class="btn btn-outline-primary">View Privacy Policy</a>
+            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+</div>
